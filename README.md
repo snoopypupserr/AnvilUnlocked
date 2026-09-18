@@ -1,25 +1,33 @@
+# AnvilUnlocked
 
-Installation information
-=======
+**AnvilUnlocked** is a lightweight NeoForge mod that eliminates the XP level cost when renaming items in an anvil[cite: 1]. 
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Vanilla Minecraft charges an increasing amount of experience levels simply for changing an item's name. This mod alters the anvil behavior using Mixins so that custom name changes cost **0 XP levels**, letting you personalize your gear, name tags, and tools freely without wasting hard-earned experience[cite: 1].
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+---
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+**Features**
+* **Free Item Renaming:** Renaming any item in an anvil costs zero experience levels[cite: 1].
+* **Seamless Vanilla Integration:** Retains standard anvil mechanics for repairing and combining enchantments—only name adjustments are made free[cite: 1].
+* **Server-Side Friendly:** Works cleanly via NeoForge mixins (`AnvilMenuMixin`) for smooth performance[cite: 1].
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+---
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+**Installation**
+
+1. **Prerequisites:** Ensure you have the appropriate version of **Minecraft** and **NeoForge** installed[cite: 1].
+2. **Download:** Grab the latest `.jar` release of **AnvilUnlocked**[cite: 1].
+3. **Deploy:** Drop the `.jar` file into your Minecraft instance's `mods` folder[cite: 1].
+4. **Play:** Launch the game and enjoy zero-cost item renaming[cite: 1]!
+
+---
+
+**Technical Details**
+
+* **Mod Loader:** NeoForge[cite: 1]
+* **Key Components:**
+  * `com.norenamelevelcost.NoRenameLevelCost` – Main mod entry point[cite: 1].
+  * `com.norenamelevelcost.mixin.AnvilMenuMixin` – Injector intercepting anvil level calculations[cite: 1].
+  * `com.norenamelevelcost.AnvilRenameHandler` – Core logic handling cost overrides during rename operations[cite: 1].
+
+---
