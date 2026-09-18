@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://media.forgecdn.net/avatars/2055/548/639253607593365232.png" alt="No Rename Level Cost Logo" width="128"/>
+</p>
+
 # AnvilUnlocked
 
 **AnvilUnlocked** is a lightweight NeoForge mod that eliminates the XP level cost when renaming items in an anvil[cite: 1]. 
